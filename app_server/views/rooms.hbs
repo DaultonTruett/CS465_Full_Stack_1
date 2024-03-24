@@ -15,21 +15,22 @@
 					<div>
 						<div class="body">
 							<h1>{{pageName}}</h1>
-							<ul id="sites">
-							{{#each trips}}
+							<ul id="rooms">
+                                {{#each roomsData}}
 								<li>
-									<a href="/travel"><img src="images/{{this.image}}" alt="Img"></a>
-									<h2><a href="/travel">{{this.name}}</a></h2>
-									{{{this.description}}}
+									<a href="rooms.html"><img src="images/{{this.picture}}" alt="Img"></a>
+									<h2><a href="rooms.html">{{this.name}}</a></h2>
+									<p>{{this.description}}</p>
+									<span class="rate">{{this.rate}}</span>
 								</li>
-							{{/each}}
+                                {{/each}}
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		{{> footer}}
+        {{> footer}}
 	</div>
 </body>
 </html>

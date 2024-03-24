@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>{{title}}</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+            {{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+                        {{#each aboutData}}
+							<h1>{{this.pageName}}</h1>
+							<h2>{{this.mainHeader}}</h2>
+							<p>{{this.mainHeaderDescription_1}}</p>
+							
+							<p>{{this.mainHeaderDescription_2}}</p>
+							<hr>
+							<div class="ads">
+								<h2>{{this.subHeader_3}}</h2>
+								<p>{{this.subHeaderDescription_3}}</p>
+								<h2>{{this.subHeader_4}}</h2>
+								<p>{{this.subHeaderDescription_4}}</p>
+							</div>
+							<h2>{{this.subHeader_1}}</h2>
+							<p>{{this.subHeaderDescription_1}}</p>
+							<h2>{{this.subHeader_2}}</h2>
+							<p>{{this.subHeaderDescription_2}}</p>
+                        {{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        {{> footer}}
+	</div>
+</body>
+
+</html>
