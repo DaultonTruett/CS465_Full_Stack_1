@@ -1,0 +1,13 @@
+<div class="container" *ngIf="!isLoggedIn()">
+    <h1>Hello, Travlr Admin!</h1>
+    <h4>
+        <i>
+        Please login to continue
+        </i>
+    </h4>
+</div>
+
+<div class="container" *ngIf="isLoggedIn()">
+    <h1>Hello, {{this.userName}}</h1>
+    <h2>{{this.numTrips}}</h2>
+</div>

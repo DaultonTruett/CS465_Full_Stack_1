@@ -1,4 +1,4 @@
-<div class="col-md-4">
+<div class="col-md-4 mt-5 position-absolute top-50 start-50 translate-middle">
     <h2 class="text-center">Add Trip</h2>
 
     <form *ngIf="addForm" [formGroup]="addForm" (ngSubmit)="onSubmit()">
@@ -99,7 +99,8 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-info">Save</button>
-
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-info mt-3">Save</button>
+        </div>
     </form>
 </div>

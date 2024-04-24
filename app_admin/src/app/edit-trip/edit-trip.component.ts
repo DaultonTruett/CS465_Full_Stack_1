@@ -34,7 +34,7 @@ export class EditTripComponent implements OnInit{
       .subscribe({
         next: (value: any) => {
           console.log(value);
-          this.router.navigate(['']);
+          this.router.navigate(['list-trips']);
         },
         error: (error: any) => {
           console.log('Error ' + error);
@@ -53,7 +53,7 @@ export class EditTripComponent implements OnInit{
 
     if(!tripCode){
       alert("Something wrong, couldn't find where I stashed the tripCode!");
-      this.router.navigate(['']);
+      this.router.navigate(['list-trips']);
       return;
     };
 
@@ -76,6 +76,9 @@ export class EditTripComponent implements OnInit{
     .subscribe({
       next: (value: any) => {
         this.trip = value;
+        
+        //this.trip.start.toDateString();
+    
         // populate record into form
         this.editForm.patchValue(value[0]);
 

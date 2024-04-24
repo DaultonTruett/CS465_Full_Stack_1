@@ -24,7 +24,7 @@ const travel = async function(req, res, next){
             json = [];
         }else{
             if(!json.length){
-                message = 'No trips exist in our database.';
+                msg = 'No trips exist in our database.';
             };
         };
 
