@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Name:",
+        "email": "Email:",
+        "subject": "Subject:",
+        "message": "Message:",
+
+        "subHeader": "Travlr Getaways",
+
+        "contact_1": "Address:",
+        "address": "123 Lorem Ipsum Cove, Sed Ut City, LI 12345",
+        "contact_2": "Telephone Number:",
+        "phone": "1-800-999-9999",
+        "contact_3": "Fax Number:",
+        "fax": "1-800-111-1111"
+    }
+]

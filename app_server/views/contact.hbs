@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+            {{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="contact" class="body">
+							<h1>{{pageName}}</h1>
+                            {{#each contactData}}
+							<form action="/index" method="post">
+								<table>
+									<tbody>
+										<tr>
+											<td>{{this.name}}</td>
+											<td><input type="text" value="" class="txtfield"></td>
+										</tr> <tr>
+											<td>{{this.email}}</td>
+											<td><input type="text" value="" class="txtfield"></td>
+										</tr> <tr>
+											<td>{{this.subject}}</td>
+											<td><input type="text" value="" class="txtfield"></td>
+										</tr> <tr>
+											<td class="txtarea">{{this.message}}</td>
+											<td><textarea></textarea></td>
+										</tr> <tr>
+											<td></td>
+											<td><input type="submit" value="" class="btn"></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+							<h2>{{this.subHeader}}</h2>
+							<p>
+								<span>{{this.contact_1}}</span>{{this.address}}
+							</p>
+							<p>
+								<span>{{this.contact_2}}</span>{{this.phone}}
+							</p>
+							<p>
+								<span>{{this.contact_3}}</span>{{this.fax}}
+							</p>
+                        {{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        {{> footer}}
+	</div>
+</body>
+</html>

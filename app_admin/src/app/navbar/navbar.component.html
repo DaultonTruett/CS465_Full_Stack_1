@@ -1,0 +1,39 @@
+
+
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mb-5" data-bs-theme="dark">
+    <a class="navbar-brand" href="#">
+        <img src="/assets/images/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="list-trips">
+                    Trips
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login"
+                    *ngIf="!isLoggedIn()">
+                    <span class="has-icon-left">
+                        Login
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="" (click)="onLogout()"
+                    *ngIf="isLoggedIn()">
+                    <span class="has-icon-left">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+

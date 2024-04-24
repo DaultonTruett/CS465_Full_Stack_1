@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+            {{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="news" class="body">
+                            {{#each newsData}}
+							<div class="sidebar">
+								<h3>{{this.sidebar_header_1}}</h3>
+								<ul>
+									<li>
+										<a href="news.html">{{this.sidebar_link_1}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_2}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_3}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_4}}</a>
+									</li>
+								</ul>
+								<h3>{{this.sidebar_header_2}}</h3>
+								<ul>
+									<li>
+										<a href="news.html">{{this.sidebar_link_5}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_6}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_7}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_8}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_9}}</a>
+									</li>
+									<li>
+										<a href="news.html">{{this.sidebar_link_10}}</a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h1>{{this.pageName}}</h1>
+								<img src="images/{{this.picture}}" alt="Img">
+								<h2>{{this.newsHeader}}</h2>
+								<span class="time">{{this.date}}<br>{{this.author}}</span>
+								<p>{{this.description_1}}</p>
+								<p>{{this.description_2}}</p>
+								<p>{{this.description_3}}</p>
+							</div>
+                            {{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        {{> footer}}
+	</div>
+</body>
+</html>
