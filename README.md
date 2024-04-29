@@ -27,6 +27,6 @@
   ### How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
     This course has been incredibly valuable in helping me reach my professional goals as it has helped me in developing my skills and knowledge with Full Stack development. Prior to this course, I had limited full Stack development experience and had never made an application with the MEAN stack. JavaScript was one of the first languages I learned to program with, but it had been a while since I used JavaScript prior to taking this course. Developing this Full Stack application refined my previous JavaScript skills and reinforced my understanding of how Full Stack applications work. 
     
-    Looking forward, the skills I have gained and refined in this course have made me a much more marketable candidate in my field as it has helped me gain a firm understanding of using an API, databases, and Full Stack development with popular, in demand, JavaScript libraries.
+    Looking forward, the skills I have gained and refined in this course have made me a much more marketable candidate in my field as it has helped me gain a firm understanding of using an API, working with databases, and the ability to develop Full Stack applications with popular, in demand, JavaScript libraries.
 
 
